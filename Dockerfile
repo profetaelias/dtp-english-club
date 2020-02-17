@@ -6,3 +6,4 @@ WORKDIR /srv/app
 COPY package.json ./
 RUN yarn && yarn cache clean
 COPY . .
+CMD npm start
